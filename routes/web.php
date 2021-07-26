@@ -80,7 +80,7 @@ Route::group(['as' => 'landlord.', 'prefix' => 'landlord', 'namespace' => 'Landl
 //renter
 
 // Route::group(['as' => 'renter.', 'prefix' => 'renter', 'namespace' => 'renter', 'middleware' => ['auth', 'renter', 'verified']],
-Route::group(['as' => 'renter.', 'prefix' => 'renter', 'namespace' => 'renter'],
+Route::group(['as' => 'renter.', 'prefix' => 'renter', 'namespace' => 'Renter'],
     function () {
         Route::get('dashboard', 'DashboardController@index')->name('dashboard');
 
