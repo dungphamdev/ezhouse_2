@@ -17,7 +17,9 @@
                     <div class="col-md-4">
                         <div class="card m-3">
                             <div class="card-header">
-                                <img src="{{ asset('storage/featured_house/'. $house->featured_image) }}" width="100%"
+                                {{-- <img src="{{ asset('storage/featured_house/'. $house->featured_image) }}" width="100%"
+                                    class="img-fluid" alt="Card image"> --}}
+                                     <img src="{{ asset('images/'. $house->featured_image) }}" width="100%"
                                     class="img-fluid" alt="Card image">
                             </div>
                             <div class="card-body">
