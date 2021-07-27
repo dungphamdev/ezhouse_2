@@ -188,24 +188,27 @@ class HouseController extends Controller
         {
 
              // Make Unique Name for Image
-            $currentDate = Carbon::now()->toDateString();
-            $featured_image_name =$currentDate.'-'.uniqid().'.'.$featured_image->getClientOriginalExtension();
+            // $currentDate = Carbon::now()->toDateString();
+            // $featured_image_name =$currentDate.'-'.uniqid().'.'.$featured_image->getClientOriginalExtension();
 
 
              // Check Dir is exists
-              if (!Storage::disk('public')->exists('featured_house')) {
-                 Storage::disk('public')->makeDirectory('featured_house');
-              }
+            //   if (!Storage::disk('public')->exists('featured_house')) {
+            //      Storage::disk('public')->makeDirectory('featured_house');
+            //   }
 
 
               // Resize Image and upload
-              $cropImage = Image::make($featured_image)->resize(400,300)->stream();
-              Storage::disk('public')->put('featured_house/'.$featured_image_name,$cropImage);
+            //   $cropImage = Image::make($featured_image)->resize(400,300)->stream();
+            //   Storage::disk('public')->put('featured_house/'.$featured_image_name,$cropImage);
 
-              if(Storage::disk('public')->exists('featured_house/'.$house->featured_image)){
-                 Storage::disk('public')->delete('featured_house/'.$house->featured_image);
-             }
-             $house->featured_image = $featured_image_name;
+            //   if(Storage::disk('public')->exists('featured_house/'.$house->featured_image)){
+            //      Storage::disk('public')->delete('featured_house/'.$house->featured_image);
+            //  }
+            //  $house->featured_image = $featured_image_name;
+
+            $featured_image_name = time() . '-'. uniqid() . '.'.$featured_image->extension();
+            $featured_image->move(public_path().'/images/', $featured_image_name);
          }
 
 
@@ -235,7 +238,6 @@ class HouseController extends Controller
         $house->rent = $request->rent;
         $house->save();
         return redirect(route('landlord.house.index'))->with('success', 'House Updated successfully');
-
 
 
     }
