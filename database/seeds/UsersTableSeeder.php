@@ -34,7 +34,21 @@ class UsersTableSeeder extends Seeder
           'created_at' => '2020-09-18 13:20:14',
           'updated_at' => '2020-09-18 13:20:14',
           'password'  => bcrypt('11223344'),
-        ]);
+        ],
+    );
+
+    DB::table('users')->insert([
+        'role_id'   => '2',
+        'name'      => 'Mr. Landlord 2',
+        'username'  => 'landlord_2',
+        'email'     => 'landlord_2@gmail.com',
+        'nid'     => '1016227150',
+        'contact'     => '01970605076',
+        'created_at' => '2020-09-18 13:20:14',
+        'updated_at' => '2020-09-18 13:20:14',
+        'password'  => bcrypt('11223344'),
+      ],
+  );
 
         DB::table('users')->insert([
           'role_id'   => '3',
@@ -47,6 +61,30 @@ class UsersTableSeeder extends Seeder
           'updated_at' => '2020-09-18 13:20:14',
           'password'  => bcrypt('11223344'),
         ]);
+
+        DB::table('areas')->insert([
+            'name'   => 'Hà Nội',
+            'user_id'   => '1',
+            'created_at' => '2020-09-18 13:20:14',
+            'updated_at' => '2020-09-18 13:20:14'
+          ]
+        );
+
+        DB::table('areas')->insert([
+            'name'   => 'TP HCM',
+            'user_id'   => '1',
+            'created_at' => '2020-09-18 13:20:14',
+            'updated_at' => '2020-09-18 13:20:14'
+          ]
+        );
+
+        DB::table('areas')->insert([
+            'name'   => 'Đà Nẵng',
+            'user_id'   => '1',
+            'created_at' => '2020-09-18 13:20:14',
+            'updated_at' => '2020-09-18 13:20:14'
+          ]
+        );
 
 
     }

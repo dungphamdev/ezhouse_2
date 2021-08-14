@@ -16,7 +16,7 @@
                               <a class="btn btn-danger" href="{{ route('landlord.house.index') }}"> Back</a>
                           </div>
                       </div>
-                  
+
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
@@ -55,7 +55,7 @@
 
                                 <tr>
                                     <th>Rent</th>
-                                    <td>{{ $house->rent }}</td>
+                                    <td>{{ number_format($house->rent) }}</td>
                                 </tr>
 
                                 <tr>
@@ -81,7 +81,7 @@
                             @endforeach
                        </div>
                     </div>
-                   
+
                     <!-- /.card-body -->
                   </div>
                   <!-- /.card -->

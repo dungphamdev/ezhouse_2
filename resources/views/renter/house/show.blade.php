@@ -13,21 +13,21 @@
                               <h3><strong>House Details</strong></h3>
                           </div>
                           <div>
-                           
+
                             @if (Auth::user()->role_id == 3)
                             <button class="btn btn-warning" type="button" onclick="renterBooking({{ $house->id }})">
                                 Apply for booking
                             </button>
-            
+
                             <form id="booking-form-{{ $house->id }}" action="{{ route('booking', $house->id) }}" method="POST" style="display: none;">
                                 @csrf
-                               
+
                             </form>
                             @endif
                               <a class="btn btn-danger" href="{{ route('renter.allHouses') }}"> Back</a>
                           </div>
                       </div>
-                  
+
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
@@ -69,7 +69,7 @@
 
                                 <tr>
                                     <th>Rent</th>
-                                    <td>{{ $house->rent }}</td>
+                                    <td>{{ number_format($house->rent) }}</td>
                                 </tr>
 
                                 <tr>
@@ -83,18 +83,18 @@
                                 </td>
                                 </tr>
 
-                                
 
-                                
+
+
                                     @if ($alreadyReviewed != null)
                                         <tr>
                                             <th>Your Review</th>
                                             <td style="text-align: justify">{{ $alreadyReviewed->opinion }}
                                             <br><a href="{{ route('renter.review.edit', $alreadyReviewed->id) }}" class="btn btn-info btn-sm my-2">Edit</a></td>
-                                            
+
                                         </tr>
                                     @endif
-                                
+
 
 
                                 @if ($stayOnceUponATime!=null)
@@ -117,7 +117,7 @@
                                     @endif
                                 @endif
 
-                                
+
                             </table>
                           </div>
 
@@ -132,7 +132,7 @@
                             @endforeach
                        </div>
                     </div>
-                   
+
                     <!-- /.card-body -->
                   </div>
                   <!-- /.card -->
@@ -161,7 +161,7 @@
                 },
                 buttonsStyling: false
             })
-            
+
             swalWithBootstrapButtons.fire({
                 title: 'Are you sure to booking this house?',
                 type: 'warning',
@@ -173,14 +173,14 @@
                     if (result.value) {
                         event.preventDefault();
                         document.getElementById('booking-form-'+id).submit();
-                
+
                     } else if (
                     /* Read more about handling dismissals below */
                     result.dismiss === Swal.DismissReason.cancel
                     ) {
                     swalWithBootstrapButtons.fire(
                         'Not Now!',
-                        
+
                     )
                 }
             })

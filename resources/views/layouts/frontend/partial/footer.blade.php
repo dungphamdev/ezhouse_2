@@ -4,16 +4,16 @@
         <div class="row">
           <div class="col-md-4">
             <h2 class="head">About Us</h2>
-            <p style="width: 80%">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore etiqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+            <p style="width: 80%">The HOUSE RENTAL brand was born from a vision and a purpose. Our dream was to create residences which truly make customers feel relaxed and comfortable. We aim to ensure they are totally satisfied and have a “Sweet Living – Sweet Life”.
+
+                We are a leading developer of serviced accommodation in Hanoi and Northern Vietnam. Our apartments can bring you quality space with convenience and comfort.</p>
           </div>
 
           <div class="col-md-4">
             <h2 class="head">Contact Us</h2>
-            <p> <i class="fas fa-map-marker-alt"></i> House Rental, Zindabazar</p>
+            <p> <i class="fas fa-map-marker-alt"></i> House Rental, VietNam</p>
             <p><i class="fas fa-phone"></i> +88 01612345678</p>
-            <p><i class="fas fa-envelope"></i> yourname@gmail.com</p>
+            <p><i class="fas fa-envelope"></i> dungphamdev@gmail.com</p>
           </div>
 
           <div class="col-md-4 social">

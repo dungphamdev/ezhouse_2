@@ -76,7 +76,7 @@
 
                             <tr>
                                 <th>Rent</th>
-                                <td>{{ $house->rent }} VNĐ</td>
+                                <td>{{ number_format($house->rent) }} VNĐ</td>
                             </tr>
 
                             <tr>

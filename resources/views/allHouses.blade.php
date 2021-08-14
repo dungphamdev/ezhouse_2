@@ -35,7 +35,7 @@
                                         class="fas fa-bath float-right"> {{ $house->number_of_toilet }} Bathrooms</i>
                                 </p>
                                 <p class="grey">
-                                    <h4>{{ $house->rent }} VNĐ</i></h4>
+                                    <h4>{{ number_format($house->rent) }} VNĐ</i></h4>
                                 </p>
                             </div>
                             <div class="card-footer">

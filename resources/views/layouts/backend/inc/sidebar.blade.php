@@ -88,7 +88,7 @@
                         </a>
                     </li>
 
-                    {{-- <li class="nav-item has-treeview">
+                    <li class="nav-item has-treeview">
                         <a href="{{ route('admin.booked.list') }}"
                             class="nav-link {{ Request::is('admin/booked-houses-list') ? 'active' : '' }}">
                             <i class="fas fa-store-alt-slash"></i>
@@ -96,9 +96,9 @@
                                 Booked Houses
                             </p>
                         </a>
-                    </li> --}}
+                    </li>
 
-                    {{-- <li class="nav-item has-treeview">
+                    <li class="nav-item has-treeview">
                         <a href="{{ route('admin.history.list') }}"
                             class="nav-link {{ Request::is('admin/booked-houses-history') ? 'active' : '' }}">
                             <i class="fas fa-history"></i>
@@ -106,7 +106,7 @@
                                 Booking History
                             </p>
                         </a>
-                    </li> --}}
+                    </li>
 
 
                 @endif
@@ -151,7 +151,7 @@
                         </a>
                     </li>
 
-                    {{-- <li class="nav-item has-treeview">
+                    <li class="nav-item has-treeview">
                         <a href="{{ route('landlord.bookingRequestList') }}"
                             class="nav-link {{ Request::is('landlord/booking-request-list') ? 'active' : '' }}">
                             <i class="fas fa-chalkboard"></i>
@@ -159,9 +159,9 @@
                                 Pending Request
                             </p>
                         </a>
-                    </li> --}}
+                    </li>
 
-                    {{-- <li class="nav-item has-treeview">
+                    <li class="nav-item has-treeview">
                         <a href="{{ route('landlord.currently.staying') }}"
                             class="nav-link {{ Request::is('landlord/booked/currently/renter') ? 'active' : '' }}">
                             <i class="fas fa-store-alt-slash"></i>
@@ -169,9 +169,9 @@
                                 Booked Houses
                             </p>
                         </a>
-                    </li> --}}
+                    </li>
 
-                    {{-- <li class="nav-item has-treeview">
+                    <li class="nav-item has-treeview">
                         <a href="{{ route('landlord.history') }}"
                             class="nav-link {{ Request::is('landlord/booking/history') ? 'active' : '' }}">
                             <i class="fas fa-history"></i>
@@ -179,7 +179,7 @@
                                 Booking History
                             </p>
                         </a>
-                    </li> --}}
+                    </li>
                 @endif
 
 
@@ -223,7 +223,7 @@
                         </a>
                     </li>
 
-                    {{-- <li class="nav-item has-treeview">
+                    <li class="nav-item has-treeview">
                         <a href="{{ route('renter.booking.history') }}"
                             class="nav-link {{ Request::is('renter/booking/history') ? 'active' : '' }}">
                             <i class="fas fa-history"></i>
@@ -232,9 +232,9 @@
 
                             </p>
                         </a>
-                    </li> --}}
+                    </li>
 
-                    {{-- <li class="nav-item has-treeview">
+                    <li class="nav-item has-treeview">
                         <a href="{{ route('renter.booking.pending') }}"
                             class="nav-link {{ Request::is('renter/pending/booking') ? 'active' : '' }}">
                             <i class="fas fa-chalkboard"></i>
@@ -242,7 +242,7 @@
                                 Pending Booking
                             </p>
                         </a>
-                    </li> --}}
+                    </li>
 
 
                 @endif
